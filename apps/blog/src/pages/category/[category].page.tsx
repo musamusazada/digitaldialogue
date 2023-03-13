@@ -1,7 +1,6 @@
 import styled from '@emotion/styled';
 import { useTheme } from '@nextui-org/react';
 
-import AuthorSection from '../../components/AuthorSection';
 import { MainHeader } from '../../components/Header';
 import PostCard from '../../components/PostCard';
 import SEO from '../../components/SEO';

@@ -2,8 +2,6 @@ import styled from '@emotion/styled';
 import { NextUITheme, useTheme } from '@nextui-org/react';
 import { PageProgressBar } from 'core';
 
-import AuthorSection from '../components/AuthorSection';
-import Comments from '../components/Comments';
 import DateAndCategoryLink from '../components/DateAndCategoryLink';
 import { PostHeader } from '../components/Header';
 import SEO from '../components/SEO';

@@ -13,6 +13,10 @@ function Comments() {
   const rootElm = useRef<HTMLElement>();
   const { isDark } = useTheme();
 
+  interface KeyType {
+    [key: string]: any;
+  }
+
   // for initial
   useEffect(() => {
     function getCurrentTheme() {
@@ -27,7 +31,7 @@ function Comments() {
     if (document.querySelector(UTTERANCE_QUERY)) return; // prevent duplicate
 
     const utterances = document.createElement('script');
-    const utterancesConfig = {
+    const utterancesConfig: KeyType = {
       src,
       repo: blogRepo,
       theme: getCurrentTheme(),
@@ -37,8 +41,8 @@ function Comments() {
       crossorigin: 'anonymous',
     };
 
-    Object.keys(utterancesConfig).forEach(key => {
-      utterances.setAttribute(key, utterancesConfig[key]);
+    Object.keys(utterancesConfig).forEach((key: string) => {
+      utterances.setAttribute(key, utterancesConfig[key as string]);
     });
     rootElm.current.appendChild(utterances);
   }, []);

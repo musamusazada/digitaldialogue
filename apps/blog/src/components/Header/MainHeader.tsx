@@ -4,7 +4,6 @@ import { config, Text, useTheme } from '@nextui-org/react';
 import { KBarToggleButton, ThemeSwitch } from 'core';
 
 import { blogName } from '../../../_config';
-
 import EUFLAG from '../../../assets/euflag.png';
 
 export function MainHeader() {

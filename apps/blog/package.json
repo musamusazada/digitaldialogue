@@ -41,7 +41,6 @@
     "unified": "^10.1.2"
   },
   "devDependencies": {
-    "@types/react": "^18.0.28",
     "compression-webpack-plugin": "^9.2.0",
     "config": "1.0.0",
     "cypress": "^10.1.0",

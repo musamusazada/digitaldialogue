@@ -1,8 +1,7 @@
 import { NextRouter } from 'next/router';
-import { IconActionType, socialActions } from 'core/constants';
+import { IconActionType } from 'core/constants';
 import { openExternalLink } from 'core/utils';
 
-import { resumeUrl } from '../../../_config';
 import categoryActions from './categories';
 import postActions from './posts';
 
