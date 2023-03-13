@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc></loc>
+  </url>
+
+  <url>
+    <loc>/article1</loc>
+  </url>
+  <url>
+    <loc>/article2</loc>
+  </url>
+  <url>
+    <loc>/article3</loc>
+  </url>
+  <url>
+    <loc>/article4</loc>
+  </url>
+
+  <url>
+    <loc>/category/Digital</loc>
+  </url>
+</urlset>
