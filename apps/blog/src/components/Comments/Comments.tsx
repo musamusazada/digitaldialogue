@@ -16,7 +16,7 @@ function Comments() {
   // for initial
   useEffect(() => {
     function getCurrentTheme() {
-      const initialTheme = document.querySelector('html').classList[0];
+      const initialTheme = document.querySelector('html')?.classList[0];
       if (initialTheme) {
         return initialTheme.includes('dark') ? DARK_THEME : LIGHT_THEME;
       }
