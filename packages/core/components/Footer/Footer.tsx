@@ -9,17 +9,17 @@ export function Footer() {
   return (
     <StyledFooter>
       <span>
-        Copyright &copy; {date.getFullYear()}{' '}
-        <Link href={defaultUrl} target="_blank">
+        Copyright &copy; {date.getFullYear()}
+        <a href={defaultUrl} target="_blank">
           {authorName}
-        </Link>{' '}
+        </a>
         All rights reserved.
       </span>
       <span>
         Powered By{' '}
-        <Link href="" target="_blank">
+        <a href="" target="_blank">
           @DigitalDialogue
-        </Link>
+        </a>
       </span>
     </StyledFooter>
   );

@@ -1870,15 +1870,6 @@
     "@types/scheduler" "*"
     "csstype" "^3.0.2"
 
-"@types/react@^18.0.28":
-  "integrity" "sha512-RD0ivG1kEztNBdoAK7lekI9M+azSnitIn85h4iOiaLjaTrMjzslhaqCGaI4IyCJ1RljWiLCEu4jyrLLgqxBTew=="
-  "resolved" "https://registry.npmjs.org/@types/react/-/react-18.0.28.tgz"
-  "version" "18.0.28"
-  dependencies:
-    "@types/prop-types" "*"
-    "@types/scheduler" "*"
-    "csstype" "^3.0.2"
-
 "@types/scheduler@*":
   "integrity" "sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew=="
   "resolved" "https://registry.npmjs.org/@types/scheduler/-/scheduler-0.16.2.tgz"
@@ -2665,6 +2656,7 @@
     "@emotion/react" "^11.9.0"
     "@emotion/styled" "^11.8.1"
     "@nextui-org/react" "^1.0.4-beta.5"
+    "@types/react" "^18.0.28"
     "core" "0.0.1"
     "gray-matter" "^4.0.3"
     "jest" "^28.1.1"

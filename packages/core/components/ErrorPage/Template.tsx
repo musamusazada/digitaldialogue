@@ -17,7 +17,7 @@ export function ErrorTemplate({ errorTitle, paragraph, anchorMessage }: Props) {
       <Div>
         <p data-testid="paragraph">{paragraph}</p>
         <NextLink href="/" passHref>
-          <Link>{anchorMessage}</Link>
+          <p>{anchorMessage}</p>
         </NextLink>
       </Div>
     </Main>
