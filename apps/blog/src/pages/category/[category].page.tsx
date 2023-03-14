@@ -27,17 +27,20 @@ function EachCategory({ category, allPosts }: Props) {
         Posts in <strong>{category}</strong> category
       </H2>
       <main>
-        {posts.map(({ slug, title, subtitle, date, imageSrc }) => (
-          <PostCard
-            key={slug}
-            slug={slug}
-            title={title}
-            subtitle={subtitle}
-            date={date}
-            theme={theme}
-            imageSrc={imageSrc}
-          />
-        ))}
+        <PostsWrapper>
+          {posts.map(({ slug, title, subtitle, date, imageSrc }) => (
+            <PostCard
+              key={slug}
+              slug={slug}
+              title={title}
+              subtitle={subtitle}
+              date={date}
+              theme={theme}
+              imageSrc={imageSrc}
+            />
+          ))}
+        </PostsWrapper>
+
         {!isEnded && <div ref={setTarget}></div>}
       </main>
     </>
@@ -45,7 +48,15 @@ function EachCategory({ category, allPosts }: Props) {
 }
 
 export default EachCategory;
-
+const PostsWrapper = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 20px;
+  margin-top: 2rem;
+  @media (max-width: 480px) {
+    grid-template-columns: repeat(1, auto);
+  }
+`;
 const H2 = styled.h2`
   font-size: 1.25rem;
   font-weight: normal;
