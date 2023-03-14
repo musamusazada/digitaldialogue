@@ -1,7 +1,6 @@
 import styled from '@emotion/styled';
-import { Link } from '@nextui-org/react';
 
-import { authorName, defaultUrl } from '../../constants';
+import { authorName } from '../../constants';
 
 export function Footer() {
   const date = new Date();
@@ -10,7 +9,7 @@ export function Footer() {
     <StyledFooter>
       <span>
         Copyright &copy; {date.getFullYear()}
-        <a href={defaultUrl} target="_blank">
+        <a href="" target="_blank">
           {authorName}
         </a>
         All rights reserved.

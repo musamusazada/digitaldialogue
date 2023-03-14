@@ -1,15 +1,14 @@
+import styled from '@emotion/styled';
 import { useTheme } from '@nextui-org/react';
-import CoverPhoto from '../components/CoverPhoto/CoverPhoto';
 
+import CoverImage from '../../assets/cover.jpg';
+import CoverPhoto from '../components/CoverPhoto/CoverPhoto';
 import { MainHeader } from '../components/Header';
 import PostCard from '../components/PostCard';
 import SEO from '../components/SEO';
 import useInfiniteScroll from '../hooks/useInfiniteScroll';
 import useScrollRestoration from '../hooks/useScrollRestoration';
 import { getAllPosts } from '../libs/api';
-
-import CoverImage from '../../assets/cover.jpg';
-import styled from '@emotion/styled';
 interface Props {
   allPosts: PostType[];
 }
