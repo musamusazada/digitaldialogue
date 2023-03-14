@@ -3,7 +3,6 @@ import styled from '@emotion/styled';
 import { config, Text, useTheme } from '@nextui-org/react';
 import { KBarToggleButton, ThemeSwitch } from 'core';
 
-import { blogName } from '../../../_config';
 import EULOGO from '../../../assets/eulogo.png';
 
 export function MainHeader() {
