@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import styled from '@emotion/styled';
 import { config, Text, useTheme } from '@nextui-org/react';
@@ -14,7 +13,7 @@ export function MainHeader() {
       <H1 h1 css={{ textGradient: `45deg, ${theme.colors.text.value} -20%, ${theme.colors.primary.value} 70%` }}>
         <Link href="/">
           <LinkWrapper>
-            <Image src={EULOGO.src} alt="" />
+            <img src={EULOGO.src} alt="" />
             {/* <a dangerouslySetInnerHTML={{ __html: blogName }}></a> */}
           </LinkWrapper>
         </Link>
