@@ -4,7 +4,7 @@ import { config, Text, useTheme } from '@nextui-org/react';
 import { KBarToggleButton, ThemeSwitch } from 'core';
 
 import { blogName } from '../../../_config';
-import EUFLAG from '../../../assets/euflag.png';
+import EULOGO from '../../../assets/eulogo.png';
 
 export function MainHeader() {
   const { theme } = useTheme();
@@ -14,8 +14,8 @@ export function MainHeader() {
       <H1 h1 css={{ textGradient: `45deg, ${theme.colors.text.value} -20%, ${theme.colors.primary.value} 70%` }}>
         <Link href="/">
           <LinkWrapper>
-            <img src={EUFLAG.src} alt="" />
-            <a dangerouslySetInnerHTML={{ __html: blogName }}></a>
+            <img src={EULOGO.src} alt="" />
+            {/* <a dangerouslySetInnerHTML={{ __html: blogName }}></a> */}
           </LinkWrapper>
         </Link>
       </H1>
@@ -68,9 +68,11 @@ const LinkWrapper = styled.div`
   display: flex;
   & img {
     margin-right: 1.5rem;
-    width: 150px;
-    height: 100px;
+    height: 150px;
     object-fit: cover;
+    @media (max-width: 480px) {
+      height: 100px;
+    }
   }
   & a {
     line-height: 6.5rem;

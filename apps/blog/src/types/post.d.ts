@@ -5,4 +5,5 @@ type PostType = {
   date: string;
   category: string;
   content: string;
+  imageSrc: string;
 };

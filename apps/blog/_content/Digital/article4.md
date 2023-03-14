@@ -3,6 +3,7 @@ title: 'Rəqəmsal Kommunikasiya və Media Savadlılığı sülhü təşviq etm�
 subtitle: ''
 date: 2022-02-28 17:50:00
 category: 'Digital'
+imageSrc: 'https://learn.g2.com/hubfs/word%20of%20mouth%20marketing-1.jpg'
 ---
 
 <img src="https://learn.g2.com/hubfs/word%20of%20mouth%20marketing-1.jpg"  >

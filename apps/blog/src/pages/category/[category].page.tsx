@@ -27,8 +27,16 @@ function EachCategory({ category, allPosts }: Props) {
         Posts in <strong>{category}</strong> category
       </H2>
       <main>
-        {posts.map(({ slug, title, subtitle, date }) => (
-          <PostCard key={slug} slug={slug} title={title} subtitle={subtitle} date={date} theme={theme} />
+        {posts.map(({ slug, title, subtitle, date, imageSrc }) => (
+          <PostCard
+            key={slug}
+            slug={slug}
+            title={title}
+            subtitle={subtitle}
+            date={date}
+            theme={theme}
+            imageSrc={imageSrc}
+          />
         ))}
         {!isEnded && <div ref={setTarget}></div>}
       </main>

@@ -3,6 +3,7 @@ title: 'Rəqəmsal kommunikasiyalar dünyanı necə birləşdirir ?'
 subtitle: ''
 date: 2022-02-28 17:50:00
 category: 'Digital'
+imageSrc: 'https://img.freepik.com/free-vector/happy-woman-chatting-with-friends-online_74855-14073.jpg?w=996&t=st=1678703608~exp=1678704208~hmac=6b90d324cbb6a6719af6d91d610d69c8e6ae3e375ffb58b5b3bf4348e0c03162'
 ---
 
 <img src="https://img.freepik.com/free-vector/happy-woman-chatting-with-friends-online_74855-14073.jpg?w=996&t=st=1678703608~exp=1678704208~hmac=6b90d324cbb6a6719af6d91d610d69c8e6ae3e375ffb58b5b3bf4348e0c03162"  >

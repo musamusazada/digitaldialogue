@@ -3,6 +3,7 @@ title: '“Deepfakes”-in yüksəlişi: onlar nədir və onları necə aşkar e
 subtitle: ''
 date: 2022-02-28 17:50:00
 category: 'Digital'
+imageSrc: 'https://media.wired.com/photos/5ce837fc3cd5de8fe355e337/master/w_2560%2Cc_limit/Deep-Fake-1905.08233-13.jpg'
 ---
 
 <img src="https://media.wired.com/photos/5ce837fc3cd5de8fe355e337/master/w_2560%2Cc_limit/Deep-Fake-1905.08233-13.jpg"  >

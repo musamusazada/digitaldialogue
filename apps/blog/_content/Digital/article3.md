@@ -3,6 +3,7 @@ title: 'Media savadlılığı : Rəqəmsal kommunikasiya üçün niyə vacibdir?
 subtitle: ''
 date: 2022-02-28 17:50:00
 category: 'Digital'
+imageSrc: 'https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/0bc258100013113.5eff47005b02e.jpg'
 ---
 
 <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/0bc258100013113.5eff47005b02e.jpg"  >
