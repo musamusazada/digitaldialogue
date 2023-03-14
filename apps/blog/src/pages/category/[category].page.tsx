@@ -72,7 +72,7 @@ export async function getStaticProps({ params }) {
   if (!allCategories.includes(category)) {
     return { notFound: true };
   }
-  const postsInCategory = getAllPostsByCategory(category, ['slug', 'title', 'subtitle', 'date']);
+  const postsInCategory = getAllPostsByCategory(category, ['slug', 'title', 'subtitle', 'date', 'imageSrc']);
 
   return { props: { category, allPosts: postsInCategory } };
 }
