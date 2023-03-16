@@ -2,6 +2,7 @@ import Document, { Head, Html, Main, NextScript } from 'next/document';
 import { CssBaseline } from '@nextui-org/react';
 import { Footer, GlobalStyle, Layout } from 'core';
 import { authorName, blogGAID, blogHotjarID, favicon } from 'core/constants';
+import Script from 'next/script';
 
 function isValid(value: any) {
   if (typeof value === 'string' && value.length > 0) return true;
@@ -68,6 +69,23 @@ export default class BlogDocument extends Document {
             <Footer />
           </Layout>
           <NextScript />
+              
+          <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-9BKNJWNRC7" />
+              
+          <Script
+            id="google-analytics"
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `
+                      <!-- Google tag (gtag.js) -->
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+              
+                gtag('config', 'G-9BKNJWNRC7');
+        `,
+            }}
+          />
         </body>
       </Html>
     );
