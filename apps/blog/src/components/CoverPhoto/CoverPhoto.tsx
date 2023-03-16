@@ -27,7 +27,10 @@ const CoverPhoto: React.FC<Props> = ({ imgSrc, text }) => {
         navigation
         spaceBetween={0}
         slidesPerView={1}
-        autoplay
+        autoplay={{
+          delay: 2000,
+          disableOnInteraction: true,
+        }}
         onSlideChange={() => console.log('slide change')}
         onSwiper={swiper => console.log(swiper)}
       >
