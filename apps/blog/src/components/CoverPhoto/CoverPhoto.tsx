@@ -9,8 +9,11 @@ import Cover4 from '../../../assets/cover4.jpg';
 import Cover5 from '../../../assets/cover5.jpg';
 
 // Import Swiper styles
+/* eslint-disable import/no-unresolved */
 import 'swiper/css';
+/* eslint-disable import/no-unresolved */
 import 'swiper/css/navigation';
+
 type Props = {
   imgSrc: string;
   text: string;
