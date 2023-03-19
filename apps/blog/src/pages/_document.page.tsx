@@ -21,17 +21,19 @@ export default class BlogDocument extends Document {
           {/* for korean keywords */}
           {/* <meta name="keywords" content="blog,development,developer,frontend,블로그,개발,개발자,프론트엔드" /> */}
           <meta name="twitter:creator" content={authorName} />
-          {/* for google analytics */}
+          <>
+            <script async src={`https://www.googletagmanager.com/gtag/js?id=G-9BKNJWNRC7`}></script>
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+                  gtag('config', 'G-9BKNJWNRC7');`,
+              }}
+            />
+          </>
           <GlobalStyle />
-          <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-9BKNJWNRC7" />
-              
-          <Script id="google-analytics" strategy="afterInteractive">
-            {`
-             window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-9BKNJWNRC7');`}
-          </Script>
         </Head>
 
         <body>
