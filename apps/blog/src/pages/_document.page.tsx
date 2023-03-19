@@ -2,7 +2,7 @@ import Document, { Head, Html, Main, NextScript } from 'next/document';
 import Script from 'next/script';
 import { CssBaseline } from '@nextui-org/react';
 import { Footer, GlobalStyle, Layout } from 'core';
-import { authorName, blogGAID, blogHotjarID, favicon } from 'core/constants';
+import { authorName, favicon } from 'core/constants';
 
 function isValid(value: any) {
   if (typeof value === 'string' && value.length > 0) return true;
