@@ -4,11 +4,6 @@ import { CssBaseline } from '@nextui-org/react';
 import { Footer, GlobalStyle, Layout } from 'core';
 import { authorName, favicon } from 'core/constants';
 
-function isValid(value: any) {
-  if (typeof value === 'string' && value.length > 0) return true;
-  return false;
-}
-
 export default class BlogDocument extends Document {
   render() {
     return (
