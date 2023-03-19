@@ -16,7 +16,6 @@ export default class BlogDocument extends Document {
         <Head>
           {/* for NextUI */}
           {CssBaseline.flush()}
-
           <link rel="icon" href={favicon.default.src} />
           <meta httpEquiv="Content-type" content="text/html; charset=utf-8" />
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
@@ -27,49 +26,8 @@ export default class BlogDocument extends Document {
           {/* for korean keywords */}
           {/* <meta name="keywords" content="blog,development,developer,frontend,블로그,개발,개발자,프론트엔드" /> */}
           <meta name="twitter:creator" content={authorName} />
-
           {/* for google analytics */}
-          {isValid(blogGAID) && (
-            <>
-              <script async src={`https://www.googletagmanager.com/gtag/js?id=${blogGAID}`}></script>
-              <script
-                dangerouslySetInnerHTML={{
-                  __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', '${blogGAID}');`,
-                }}
-              />
-            </>
-          )}
-
-          {/* for hotjar */}
-          {isValid(blogHotjarID) && (
-            <script
-              dangerouslySetInnerHTML={{
-                __html: `(function(h,o,t,j,a,r){
-              h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-              h._hjSettings={hjid:${blogHotjarID},hjsv:6};
-              a=o.getElementsByTagName('head')[0];
-              r=o.createElement('script');r.async=1;
-              r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-              a.appendChild(r);
-          })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');`,
-              }}
-            ></script>
-          )}
-
           <GlobalStyle />
-        </Head>
-
-        <body>
-          <Layout>
-            <Main />
-            <Footer />
-          </Layout>
-          <NextScript />
-              
           <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-9BKNJWNRC7" />
               
           <Script id="google-analytics" strategy="afterInteractive">
@@ -79,6 +37,15 @@ export default class BlogDocument extends Document {
             gtag('js', new Date());
             gtag('config', 'G-9BKNJWNRC7');`}
           </Script>
+        </Head>
+
+        <body>
+          <Layout>
+            <Main />
+            <Footer />
+          </Layout>
+          <NextScript />
+              
         </body>
       </Html>
     );
