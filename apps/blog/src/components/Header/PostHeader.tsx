@@ -32,7 +32,7 @@ const Header = styled.header`
   word-break: break-word;
   & a {
     display: inline-block;
-    max-width: 300px;
+    max-width: 800px;
     letter-spacing: normal;
   }
 `;

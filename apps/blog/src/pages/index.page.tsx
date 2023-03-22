@@ -28,7 +28,7 @@ function Blog({ allPosts }: Props) {
       <SEO />
       <MainHeader />
       <CoverPhoto
-        imgSrc={CoverImage.src}
+        imgSrc={CoverImage}
         text='Avropa İttifaqının ‘Stabillik və Sülhə Yardım’ (IcSP) aləti tərəfindən maliyyələşdirilən “Bacarıqların Artırılması və Vətəndaşların İştirakı ilə Sülh Quruculuğu: Mərhələ 2” (PeaCE-2) proqramı çərçivəsində keçirilən "Yeniyetmələr üçün Rəqəmsal kommunikasiya" layihəsinin səhifəsinə xoş gəlmisiniz!'
       />
       <main>

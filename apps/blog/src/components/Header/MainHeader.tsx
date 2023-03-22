@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import { config, Text, useTheme } from '@nextui-org/react';
 import { KBarToggleButton, ThemeSwitch } from 'core';
 
-import EULOGO from '../../../assets/eulogo.png';
+import { blogName } from '../../../_config';
 
 export function MainHeader() {
   const { theme } = useTheme();
@@ -13,8 +13,7 @@ export function MainHeader() {
       <H1 h1 css={{ textGradient: `45deg, ${theme.colors.text.value} -20%, ${theme.colors.primary.value} 70%` }}>
         <Link href="/">
           <LinkWrapper>
-            <img src={EULOGO.src} alt="" />
-            {/* <a dangerouslySetInnerHTML={{ __html: blogName }}></a> */}
+            <a dangerouslySetInnerHTML={{ __html: blogName }}></a>
           </LinkWrapper>
         </Link>
       </H1>
@@ -75,11 +74,11 @@ const LinkWrapper = styled.div`
   }
   & a {
     line-height: 6.5rem;
-    font-size: 4rem;
+    font-size: 2rem;
     word-break: break-all;
     letter-spacing: normal;
     @media (max-width: 480px) {
-      font-size: 1.9rem;
+      font-size: 1.2rem;
       line-height: 2rem;
     }
   }
